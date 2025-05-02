@@ -1,0 +1,519 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITBLOOM - Fitness And Health Tips</title>
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* CSS for the grey area and text formatting */
+        .grey-area {
+            background-color: #f0f0f0; /* Light grey background */
+            padding: 20px;
+            border-radius: 8px; /* Slightly more rounded corners */
+            margin: 20px auto; /* Add some top/bottom margin and center horizontally */
+            max-width: 768px; /* Example maximum width for readability on larger screens */
+            box-sizing: border-box; /* Ensure padding doesn't affect the overall width */
+        }
+
+        h2.health-tips-title {
+            color: #333;
+            margin-top: 0; /* Reset default top margin */
+            margin-bottom: 15px;
+            text-align: center; /* Center the main heading */
+        }
+
+        p.health-tips-intro {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .health-tips-hr {
+            border: 1px solid #ddd;
+            margin: 25px 0;
+        }
+
+        h3.health-tips-h3 {
+            color: #444;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        h4.health-tips-h4 {
+            color: #666;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            font-weight: bold; /* Make subheadings stand out more */
+        }
+
+        p.health-tips-p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #333; /* Darker text for better readability */
+        }
+
+        p.health-tips-note {
+            font-style: italic;
+            color: #777;
+            margin-top: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">FITBLOOM</a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list container">
+
+                    <li>
+                        <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+                    </li>
+
+                    <li>
+                        <a href="health-tips.html" class="navbar-link" data-nav-link>Health Tips</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="navbar-link" data-nav-link>About</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+
+                   
+
+                    
+                </ul>
+            </nav>
+
+            <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+
+            <section class="section hero" aria-label="hero" id="home">
+                <div class="container">
+
+                    <div class="hero-content">
+
+
+                        <h1 class="h1 hero-title"> Welcome to FITBLOOM!
+                            — Your Journey to a Healthier, Happier You!
+                            <br><br>
+                            <p style="font-size: 20px; margin-top: 0px;">
+                                Ready to transform your fitness journey?
+                                With just a few simple details, FITBLOOM can assess your current fitness level and suggest personalized health tips - all in a matter of seconds!
+                            </p>
+
+                            <ul class="btn-list" style="font-size: 25px; margin-top: 50px;">
+
+                                <li>
+                                    <a href="nafld.html" class="btn btn-primary">Check Fitness</a>
+                                </li>
+
+                            </ul>
+                        </h1>
+
+
+                    </div>
+
+                    <figure style="width: 400px; margin-left: 300px; margin-bottom: 200px;">
+                        <img src="./assets/images/banner1.png" width="1146" height="1226" loading="lazy" alt="about banner"
+                            class="w-100">
+                    </figure>
+
+
+                </div>
+            </section>
+
+
+
+                   		<section style="background-color: white; padding-top: 40px; padding-bottom: 40px;">
+  <style>
+    .button-container {
+      display: flex;
+      gap: 60px; /* Wider gap between buttons */
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .button-box {
+      width: 200px; /* Bigger button */
+      height: 200px;
+      background-color: #35254A;
+      border-radius: 20px;
+      color: white;
+      font-size: 20px; /* Bigger text */
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .button-box:hover {
+      background-color: #4A3866;
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+
+  <div class="button-container">
+    <button onclick="openPage('workout.html')" class="button-box">Workout Plans</button>
+    <button onclick="openPage('diet.html')" class="button-box">Diet Plans</button>
+    <button onclick="openPage('bmi.html')" class="button-box">Check Fitness</button>
+    <button onclick="openPage('health-tips.html')" class="button-box">Health Tips</button>
+  </div>
+</section>
+
+<script>
+  function openPage(page) {
+    window.location.href = page;
+  }
+</script>
+
+
+
+
+
+            <section class="section about-2" aria-label="about" id="about" style="background-color: hsl(269, 36%, 22%); color: white;">
+                <div class="container">
+
+                    <div class="about-content">
+
+                        <p class="section-subtitle">About this website</p>
+
+                        <h2 class="h2 section-title" style="color: white;">
+                          This website is built to make fitness and wellness accessible, offering easy-to-follow tips for a healthier, happier you.
+                        </h2>
+
+                        <p class="section-text">
+                            <b>What is Fitness and Health Tips? - </b>
+                            Fitness and health tips are practical suggestions aimed at improving physical and mental well-being. Fitness tips focus on exercises and movement to enhance strength and endurance, while health tips cover topics like nutrition, hydration, sleep, and stress management. Together, they help individuals lead a healthier, more active life by promoting balanced habits and overall wellness.
+                        </p>
+
+                        <p class="section-text">
+                            <b>How does this website work? - </b>
+                            This website calculates your fitness by using inputs like weight, height, age, gender, waist circumference, and BMI. Once you enter your details, it automatically calculates your BMI and provides personalized health insights and tips based on the information, helping you make informed decisions about your fitness and health goals.
+                            <br><br>
+                            <b>Disclaimer - </b>
+                            This website provides general fitness information and is not a substitute for professional medical advice. For clinical concerns, please consult a healthcare professional.
+                        </p>
+                        <a href="https://www.everydayhealth.com/fitness/#q-as" class="btn btn-primary">Discover More</a>
+
+                      </div>
+
+                    <img src="assets/images/banner3.png" width="1146" height="1226" loading="lazy" alt="about banner" class="w-100">
+
+
+                </div>
+            </section>
+
+
+
+
+            <footer class="footer" id="contact">
+
+                <div class="section footer-top">
+                    <div class="container">
+
+                        <div class="footer-brand">
+
+                            <a href="#" class="logo">FITBLOOM</a>
+
+                            <p class="section-text">
+                                Let’s Talk! Got any questions, feedback, or need help? We’re here for you.
+                            </p>
+
+                            <ul class="social-list">
+
+                                <li>
+                                    <a href="https://www.facebook.com/" class="social-link">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.X.com" class="social-link">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.google.co.in/" class="social-link">
+                                        <ion-icon name="logo-google"></ion-icon>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.linkedin.com" class="social-link">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                </li>
+
+                              </ul>
+
+
+
+                            </div>
+                    
+                    
+                    
+                            <ul class="footer-list">
+                    
+                    
+                    
+                              <li>
+                    
+                                <p class="footer-list-title">Company</p>
+                    
+                              </li>
+                    
+                    
+                    
+                              <li>
+                    
+                                <a href="#about" class="footer-link">About Us</a>
+                    
+                              </li>
+                    
+                    
+                    
+                              <li>
+                    
+                                <a href="#contact" class="footer-link">Contact Us</a>
+                    
+                              </li>
+                    
+                    
+                    
+                              <li>
+                    
+                                <a href="#" class="footer-link">Core Services</a>
+                    
+                              </li>
+                    
+                    
+                    
+                              <li>
+                    
+                                <a href="#" class="footer-link">Our Team</a>
+                    
+                              </li>
+                    
+                     	      <li>
+                               <a href="nafld.html" class="navbar-link" data-nav-link>Check Fitness</a>
+                              </li>
+                    
+                    
+                    
+                            </ul>
+                    
+                    
+                    
+                            <ul class="footer-list">
+                    
+                    
+                    
+                              <li>
+                    
+                                <p class="footer-list-title">Useful Links</p>
+                    
+                              </li>
+                    
+                    
+                    
+                              <li>
+                    
+                                <a href="#" class="footer-link">Contact Us</a>
+                    
+                              </li>
+                    
+                    
+                    
+                              <li>
+                    
+                                <a href="#" class="footer-link">Privacy Policy</a>
+                    
+                              </li>
+                    
+                    
+                    
+                              <li>
+                    
+                                <a href="#" class="footer-link">How It Works</a>
+                    
+                              </li>
+                    
+                    
+                    
+                              <li>
+                    
+                                <a href="#" class="footer-link">Terms & Conditions</a>
+                    
+                              </li>
+                    
+                    
+                    
+                            </ul>
+                    
+                    
+                    
+                            <ul class="footer-list">
+                    
+                    
+                    
+                              <li>
+                    
+                                <p class="footer-list-title">Get In Touch</p>
+                    
+                              </li>
+                    
+                    
+                    
+                              <li class="footer-item">
+                    
+                                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                    
+                    
+                    
+                                <a href="tel:+12023459999" class="item-link">+91XXXXXXXXX</a>
+                    
+                              </li>
+                    
+                    
+                    
+                              <li class="footer-item">
+                    
+                                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                    
+                    
+                    
+                                <a href="mailto:supportvast@gmail.com" class="item-link">fitbloom@gmail.com</a>
+                    
+                              </li>
+                    
+                    
+                    
+                              <li class="footer-item">
+                    
+                                <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+                    
+                    
+                    
+                                <address class="item-link address">
+                    
+                                  Greater Noida <br>
+                    
+                                  Knowledge Park 2, india
+                    
+                                </address>
+                    
+                              </li>
+                    
+                    
+                    
+                            </ul>
+                    
+                    
+                    
+                          </div>
+                    
+                        </div>
+                    
+                    
+                    
+                        <div class="footer-bottom">
+                    
+                          <div class="container">
+                    
+                    
+                    
+                            <p class="copyright">
+                    
+                              &copy; 2025 All Rights Reserved by <a href="#" class="copyright-link">codewithopensource</a>.
+                    
+                            </p>
+                    
+                    
+                    
+                          </div>
+                    
+                        </div>
+                    
+                    
+                    
+                      </footer>
+                    
+                               
+                    
+                      <!-- 
+                    
+                        - #BACK TO TOP
+                    
+                      -->
+                    
+                    
+                    
+                      <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+                    
+                        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+                    
+                      </a>
+                    
+                    
+               
+                    
+                      <!-- 
+                    
+                        - custom js link
+                    
+                      -->
+                    
+                      <script src="./assets/js/script.js" defer></script>
+                    
+                    
+                    
+                      <!-- 
+                    
+                        - ionicon link
+                    
+                      -->
+                    
+                      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                    
+                      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+                    
+                    </body> 
+                    </html>
+```
